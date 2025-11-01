@@ -1,0 +1,16 @@
+仓库来源：
+https://github.com/Yiming-M/Scholar-Lite
+
+使用方式：
+1、创建新文章：
+hugo new content/posts/your-paper-title/index.md
+
+---
+title: "Your Paper Title"
+date: 2024-01-15
+venue: "Conference/Journal Name"
+keywords: ["keyword1", "keyword2", "keyword3"]
+---
+
+2、启动服务器
+hugo server -D
