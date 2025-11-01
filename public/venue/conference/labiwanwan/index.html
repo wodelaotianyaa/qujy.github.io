@@ -3,7 +3,7 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>Multi-Column Layout User Guide | Jane&#39;s Portfolio</title>
+<title>Conference/Labiwanwan | Qujy&#39;s Blog</title>
 
 
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function() {
       <div class="profile-section">
         <div class="profile-header">
           <img src="/images/profile.svg" alt="Profile Photo" class="profile-img">
-          <h1>Jane&#39;s Portfolio</h1>
+          <h1>Qujy&#39;s Blog</h1>
         </div>
         
         <div class="profile-bio">
@@ -271,185 +271,11 @@ You can find my work on <a href="https://github.com">GitHub</a> and connect with
     
     <main class="content-main">
       
-<div class="post-content">
-    <h1>Multi-Column Layout User Guide</h1>
-
-    
-    
-    <time datetime="2025-08-06T00:00:00&#43;00:00">August 6, 2025</time>
-
-    <p>This guide explains how to use the multi-column layout feature on your website.</p>
-<h2 id="basic-syntax">Basic Syntax</h2>
-<p>Use the <code>multi-col</code> identifier to create a multi-column layout:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">`````<span class="sb">`multi-col
-</span></span></span><span class="line"><span class="cl"><span class="sb">`</span>`<span class="sb">`col
-</span></span></span><span class="line"><span class="cl"><span class="sb">Column 1 content
-</span></span></span><span class="line"><span class="cl"><span class="sb">`</span>`<span class="sb">`
-</span></span></span><span class="line"><span class="cl"><span class="sb">`</span>`<span class="sb">`col
-</span></span></span><span class="line"><span class="cl"><span class="sb">Column 2 content
-</span></span></span><span class="line"><span class="cl"><span class="sb">`</span>`<span class="sb">`
-</span></span></span><span class="line"><span class="cl"><span class="sb">`</span>`````</span></span></code></pre></div><h2 id="special-column-styles">Special Column Styles</h2>
-<h3 id="bordered-column-col-border">Bordered Column (col-border)</h3>
-<p>Adds a border to the specified column:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">`````<span class="sb">`multi-col
-</span></span></span><span class="line"><span class="cl"><span class="sb">`</span>`<span class="sb">`col-border
-</span></span></span><span class="line"><span class="cl"><span class="sb">**Bordered Column**
-</span></span></span><span class="line"><span class="cl"><span class="sb">This column will have a nice border effect
-</span></span></span><span class="line"><span class="cl"><span class="sb">`</span>`<span class="sb">`
-</span></span></span><span class="line"><span class="cl"><span class="sb">`</span>`<span class="sb">`col
-</span></span></span><span class="line"><span class="cl"><span class="sb">Normal column content
-</span></span></span><span class="line"><span class="cl"><span class="sb">`</span>`<span class="sb">`
-</span></span></span><span class="line"><span class="cl"><span class="sb">`</span>`````</span></span></code></pre></div><h3 id="shaded-column-col-shade">Shaded Column (col-shade)</h3>
-<p>Adds a shadow effect to the specified column:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">`````<span class="sb">`multi-col
-</span></span></span><span class="line"><span class="cl"><span class="sb">`</span>`<span class="sb">`col
-</span></span></span><span class="line"><span class="cl"><span class="sb">Normal column content
-</span></span></span><span class="line"><span class="cl"><span class="sb">`</span>`<span class="sb">`
-</span></span></span><span class="line"><span class="cl"><span class="sb">`</span>`<span class="sb">`col-shade
-</span></span></span><span class="line"><span class="cl"><span class="sb">**Shaded Column**
-</span></span></span><span class="line"><span class="cl"><span class="sb">This column will have a shadow and hover effect
-</span></span></span><span class="line"><span class="cl"><span class="sb">`</span>`<span class="sb">`
-</span></span></span><span class="line"><span class="cl"><span class="sb">`</span>`````</span></span></code></pre></div><h2 id="syntax-hierarchy-rules">Syntax Hierarchy Rules</h2>
-<div class="table-title">Example Syntax for Backtick Count</div>
-<p>Choose the appropriate number of backticks based on content complexity:</p>
-<table>
-  <thead>
-      <tr>
-          <th>Content Type</th>
-          <th>Number of Backticks</th>
-          <th>Example Syntax</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Simple Text</td>
-          <td>6</td>
-          <td><code>col</code>, <code>col-border</code>, <code>col-shade</code></td>
-      </tr>
-      <tr>
-          <td>Contains Code Blocks</td>
-          <td>9</td>
-          <td>Same as above, but use 9 backticks for the outer block</td>
-      </tr>
-      <tr>
-          <td>Complex Nesting</td>
-          <td>12</td>
-          <td>Same as above, but use 12 backticks for the outer block</td>
-      </tr>
-  </tbody>
-</table>
-<div class="table-note">
-<strong>Rule</strong>: The number of outer backticks must be at least 3 more than the largest number of consecutive backticks within the content.
-</div>
-<h2 id="examples">Examples</h2>
-<h3 id="basic-two-column-layout">Basic Two-Column Layout</h3>
-<div class="columns-2"><div class="column">
-            <p><strong>左列</strong></p>
-<ul>
-<li>项目1</li>
-<li>项目2</li>
-<li>项目3</li>
-</ul>
-          </div><div class="column">
-            <p><strong>右列</strong></p>
-<ol>
-<li>步骤一</li>
-<li>步骤二</li>
-<li>步骤三</li>
-</ol>
-          </div></div><h3 id="multi-column-with-code-blocks">Multi-Column with Code Blocks</h3>
-<div class="columns-2"><div class="column">
-            <p><strong>Python Code Example</strong></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">example</span><span class="p">():</span>
-</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Hello World!&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="kc">True</span></span></span></code></pre></div>
-          </div><div class="column">
-            <p><strong>Configuration Example</strong></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="c"># Configuration file</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">settings</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">mode</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;production&#34;</span></span></span></code></pre></div>
-          </div></div><h3 id="three-column-image-display">Three-Column Image Display</h3>
-<div class="columns-3"><div class="column">
-            <img src="posts/multi-column-test/fairy.png" alt="Fairy">
-<strong>Fairy</strong>
-          </div><div class="column">
-            <img src="posts/multi-column-test/japanese_goblin.png" alt="Japanese Goblin">
-<strong>Japanese Goblin</strong>
-          </div><div class="column">
-            <img src="posts/multi-column-test/mage.png" alt="Mage">
-<strong>Mage</strong>
-          </div></div><h3 id="border-and-shade-demonstration">Border and Shade Demonstration</h3>
-<div class="columns-3"><div class="column column-border">
-            <p><strong>📋 Important Note</strong></p>
-<p>This is an important information box with a border.</p>
-<ul>
-<li>Important info 1</li>
-<li>Important info 2</li>
-<li>Important info 3</li>
-</ul>
-<blockquote>
-<p>The border color automatically adapts to the theme</p>
-</blockquote>
-
-          </div><div class="column column-shade">
-            <p><strong>🎨 Design Highlight</strong></p>
-<p>This is a design showcase area with a shadow.</p>
-<p>It has an animation effect on mouse hover:</p>
-<ul>
-<li>Deeper shadow</li>
-<li>Slightly raised</li>
-</ul>
-<p>Perfect for highlighting important content!</p>
-
-          </div><div class="column">
-            <p><strong>📝 Normal Content</strong></p>
-<p>This is normal column content with no special styling.</p>
-<p>Used for comparison, you can see:</p>
-<ul>
-<li>The distinction of the bordered column</li>
-<li>The depth of the shaded column</li>
-<li>The simplicity of the normal column</li>
-</ul>
-
-          </div></div><h2 id="features">Features</h2>
-<ul>
-<li>✅ Auto-detects column count (2-8 columns)</li>
-<li>✅ Responsive design (stacks to a single column on mobile)</li>
-<li>✅ Full syntax highlighting support</li>
-<li>✅ Supports any Markdown content</li>
-<li>✅ Flexible backtick hierarchy system</li>
-<li>✅ Bordered column (col-border)</li>
-<li>✅ Shaded column (col-shade)</li>
-</ul>
-<h3 id="best-practices">Best Practices</h3>
-<ol>
-<li>Choose the Right Backtick Count: Select based on content complexity</li>
-<li>Keep Column Content Balanced: Try to keep the length of each column similar</li>
-<li>Mobile-Friendly: Consider the display on small screens</li>
-<li>Clear Semantics: Use meaningful titles for columns</li>
-</ol>
-<h2 id="shortcode-alternative">Shortcode Alternative</h2>
-<p>If you prefer not to use the code block syntax, you can also use a shortcode:</p>
-<div class="columns-3"><div class="column">
-          <h2 id="column-1">Column 1</h2>
-<p><strong>Robot</strong>
-<img src="posts/multi-column-test/robot_face.png" alt="Robot"></p>
-        </div><div class="column">
-          <h2 id="column-2">Column 2</h2>
-<p><strong>Smiling Imp</strong>
-<img src="posts/multi-column-test/smiling_imp.png" alt="Smiling Imp"></p>
-        </div><div class="column">
-          <h2 id="column-3">Column 3</h2>
-<p><strong>Star-Struck Face</strong>
-<img src="posts/multi-column-test/star_struck.png" alt="Star Struck"></p>
-        </div></div>
-<hr>
-<p>This multi-column layout system provides a powerful and flexible way to organize content.</p>
-
-    
-
-</div>
+  <h1>Conference/Labiwanwan</h1>
+  
+  
+    <h2><a href="/posts/qujy-deploy2/">QWQ Forever</a></h2>
+  
 
     </main>
     
@@ -474,38 +300,8 @@ You can find my work on <a href="https://github.com">GitHub</a> and connect with
             
               
                 <div class="archive-year">
-                  <a href="javascript:void(0);" data-year="2025">2025</a>
-                  <span class="count">(2)</span>
-                </div>
-              
-                <div class="archive-year">
                   <a href="javascript:void(0);" data-year="2024">2024</a>
                   <span class="count">(2)</span>
-                </div>
-              
-                <div class="archive-year">
-                  <a href="javascript:void(0);" data-year="2023">2023</a>
-                  <span class="count">(1)</span>
-                </div>
-              
-                <div class="archive-year">
-                  <a href="javascript:void(0);" data-year="2022">2022</a>
-                  <span class="count">(2)</span>
-                </div>
-              
-                <div class="archive-year">
-                  <a href="javascript:void(0);" data-year="2021">2021</a>
-                  <span class="count">(1)</span>
-                </div>
-              
-                <div class="archive-year">
-                  <a href="javascript:void(0);" data-year="2020">2020</a>
-                  <span class="count">(1)</span>
-                </div>
-              
-                <div class="archive-year">
-                  <a href="javascript:void(0);" data-year="2015">2015</a>
-                  <span class="count">(1)</span>
                 </div>
               
             
@@ -520,15 +316,9 @@ You can find my work on <a href="https://github.com">GitHub</a> and connect with
         </h3>
         <div id="venues-section" class="tags-cloud collapsible-content">
           
-            <a href="javascript:void(0);" class="tag tag-venue sidebar-tag">CVPR</a>
+            <a href="javascript:void(0);" class="tag tag-venue sidebar-tag">Conference/Journal Name</a>
           
-            <a href="javascript:void(0);" class="tag tag-venue sidebar-tag">Documentation</a>
-          
-            <a href="javascript:void(0);" class="tag tag-venue sidebar-tag">ICCV</a>
-          
-            <a href="javascript:void(0);" class="tag tag-venue sidebar-tag">ICLR</a>
-          
-            <a href="javascript:void(0);" class="tag tag-venue sidebar-tag">Test</a>
+            <a href="javascript:void(0);" class="tag tag-venue sidebar-tag">Conference/Labiwanwan</a>
           
         </div>
       </div>
@@ -561,127 +351,13 @@ You can find my work on <a href="https://github.com">GitHub</a> and connect with
               
             
           
-            
-              
-                
-              
-                
-              
-                
-              
-            
-          
-            
-              
-                
-              
-                
-              
-                
-              
-            
-          
-            
-              
-                
-              
-                
-              
-                
-              
-            
-          
-            
-              
-                
-              
-                
-              
-            
-          
-            
-              
-                
-              
-                
-              
-            
-          
-            
-              
-                
-              
-                
-              
-                
-              
-                
-              
-            
-          
-            
-              
-                
-              
-                
-              
-                
-              
-            
-          
-            
-              
-                
-              
-                
-              
-            
           
           
+            <a href="javascript:void(0);" class="tag tag-keyword sidebar-tag" data-keyword="keyword1">keyword1</a>
           
-            <a href="javascript:void(0);" class="tag tag-keyword sidebar-tag" data-keyword="Attention Mechanism">Attention Mechanism</a>
+            <a href="javascript:void(0);" class="tag tag-keyword sidebar-tag" data-keyword="keyword2">keyword2</a>
           
-            <a href="javascript:void(0);" class="tag tag-keyword sidebar-tag" data-keyword="CLIP">CLIP</a>
-          
-            <a href="javascript:void(0);" class="tag tag-keyword sidebar-tag" data-keyword="Code Highlighting">Code Highlighting</a>
-          
-            <a href="javascript:void(0);" class="tag tag-keyword sidebar-tag" data-keyword="ConvNeXt">ConvNeXt</a>
-          
-            <a href="javascript:void(0);" class="tag tag-keyword sidebar-tag" data-keyword="Copy Function">Copy Function</a>
-          
-            <a href="javascript:void(0);" class="tag tag-keyword sidebar-tag" data-keyword="DETR">DETR</a>
-          
-            <a href="javascript:void(0);" class="tag tag-keyword sidebar-tag" data-keyword="Equations">Equations</a>
-          
-            <a href="javascript:void(0);" class="tag tag-keyword sidebar-tag" data-keyword="Guide">Guide</a>
-          
-            <a href="javascript:void(0);" class="tag tag-keyword sidebar-tag" data-keyword="Image">Image</a>
-          
-            <a href="javascript:void(0);" class="tag tag-keyword sidebar-tag" data-keyword="Image Recognition">Image Recognition</a>
-          
-            <a href="javascript:void(0);" class="tag tag-keyword sidebar-tag" data-keyword="LaTeX">LaTeX</a>
-          
-            <a href="javascript:void(0);" class="tag tag-keyword sidebar-tag" data-keyword="Layout">Layout</a>
-          
-            <a href="javascript:void(0);" class="tag tag-keyword sidebar-tag" data-keyword="Mathematics">Mathematics</a>
-          
-            <a href="javascript:void(0);" class="tag tag-keyword sidebar-tag" data-keyword="Multi-Column">Multi-Column</a>
-          
-            <a href="javascript:void(0);" class="tag tag-keyword sidebar-tag" data-keyword="Object Detection">Object Detection</a>
-          
-            <a href="javascript:void(0);" class="tag tag-keyword sidebar-tag" data-keyword="ResNet">ResNet</a>
-          
-            <a href="javascript:void(0);" class="tag tag-keyword sidebar-tag" data-keyword="SAM">SAM</a>
-          
-            <a href="javascript:void(0);" class="tag tag-keyword sidebar-tag" data-keyword="Semantic Segmentation">Semantic Segmentation</a>
-          
-            <a href="javascript:void(0);" class="tag tag-keyword sidebar-tag" data-keyword="Theme Switching">Theme Switching</a>
-          
-            <a href="javascript:void(0);" class="tag tag-keyword sidebar-tag" data-keyword="Transformer">Transformer</a>
-          
-            <a href="javascript:void(0);" class="tag tag-keyword sidebar-tag" data-keyword="Vision Transformer">Vision Transformer</a>
-          
-            <a href="javascript:void(0);" class="tag tag-keyword sidebar-tag" data-keyword="Vision-Language Model">Vision-Language Model</a>
+            <a href="javascript:void(0);" class="tag tag-keyword sidebar-tag" data-keyword="keyword3">keyword3</a>
           
         </div>
       </div>

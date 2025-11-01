@@ -1,6 +1,6 @@
 baseURL = "https://www.jane.doe/"
 languageCode = "en-us"
-title = "Jane's Portfolio"
+title = "Qujy's Blog"
 theme = "Scholar-Lite"
 
 [markup]

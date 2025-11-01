@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Qujy&#39;s Blog</title>
-    <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on Qujy&#39;s Blog</description>
+    <title>Conference/Labiwanwan on Qujy&#39;s Blog</title>
+    <link>http://localhost:1313/venue/conference/labiwanwan/</link>
+    <description>Recent content in Conference/Labiwanwan on Qujy&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 15 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>qujy test 1</title>
-      <link>http://localhost:1313/posts/qujy-deploy1/</link>
-      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/qujy-deploy1/</guid>
-      <description></description>
-    </item>
+    <atom:link href="http://localhost:1313/venue/conference/labiwanwan/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>QWQ Forever</title>
       <link>http://localhost:1313/posts/qujy-deploy2/</link>
